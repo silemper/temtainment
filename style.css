@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', Tahoma;
+}
+
+header {
+    height: 100px;
+    
+   background-image: linear-gradient(180deg, #ecf7ba, #bfc0c2);
+   /** background-color: darkgrey; **/
+}
+.nav-link:hover{
+    color:darkorange;
+}    
+.carousel-item img{
+    max-width: auto;
+   max-height: auto;
+}
