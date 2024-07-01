@@ -5,7 +5,7 @@ body {
 
 header {
     height: 80px;
-    background-image: linear-gradient(180deg, #ecf7ba, #ff5768 );
+    background-image: linear-gradient(180deg, #ecf7ba, #ff5768);
     position: fixed;
     width: 100%;
     top: 0;
