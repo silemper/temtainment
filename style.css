@@ -1,17 +1,121 @@
+/* Body and general styling */
 body {
     font-family: 'Roboto', Tahoma;
 }
 
 header {
-    height: 100px;
-    
-   background-image: linear-gradient(180deg, #ecf7ba, #bfc0c2);
-   /** background-color: darkgrey; **/
+    height: 80px;
+    background-image: linear-gradient(180deg, #ecf7ba, #bfc0c2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
-.nav-link:hover{
-    color:darkorange;
-}    
-.carousel-item img{
-    max-width: auto;
-   max-height: auto;
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-link:hover {
+    color: darkorange;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.carousel-item {
+    height: calc(100vh - 80px); /* Adjusted height calculation */
+    min-height: 300px;
+}
+
+.carousel-caption {
+    z-index: 100;
+    bottom: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Ensure columns stack vertically on small screens */
+@media (min-width: 768px) {
+    .vertical-line {
+        border-left: 1px solid #ccc;
+        height: 100%;
+        margin: 0 15px;
+    }
+}
+/* Default styles for all screen sizes */
+
+/* Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar-nav a {
+        font-size: 13px;
+        margin-top: 15px;
+        color: white; /* Example: Reduce font size for smaller screens */
+    }
+    .carousel-caption h5 {
+        font-size: 30px; /* Example: Adjust heading font size */
+    }
+    .carousel-caption p {
+        font-size: 18px; /* Example: Adjust paragraph font size */
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .navbar-nav a {
+        color: white;
+        font-size: 14px; /* Example: Slightly larger font size for medium screens */
+    }
+    .carousel-caption h5 {
+        font-size: 35px; /* Example: Adjust heading font size */
+    }
+    .carousel-caption p {
+        font-size: 22px; /* Example: Adjust paragraph font size */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar-nav a {
+        color: white;
+        font-size: 15px; /* Example: Larger font size for larger screens */
+    }
+    .carousel-caption h5 {
+        z-index: 100;
+        font-size: 45px; /* Example: Maintain large heading font size */
+    }
+    .carousel-caption p {
+        font-size: 25px; /* Example: Maintain large paragraph font size */
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Add specific styles for extra large screens if needed */
 }
