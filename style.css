@@ -145,8 +145,12 @@ textarea:focus{
     .carousel-caption p {
         font-size: 18px; /* Example: Adjust paragraph font size */
     }
+    . carousel-inner img{
+        max-width: 100%;
+        height: auto;
 }
 
+    
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 576px) and (max-width: 991.98px) {
     .navbar-nav a {
@@ -180,3 +184,10 @@ textarea:focus{
 @media (min-width: 1200px) {
     /* Add specific styles for extra large screens if needed */
 }
+@media (max-width: 768 px){
+. carousel-inner img{
+max-width: 100%;
+height: auto
+ }
+}
+    
